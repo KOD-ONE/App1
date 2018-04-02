@@ -8,6 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <AppBarButton Icon="Sort" IsCompact="True" Grid.Row="0" Click="AppBarButton_Click">
+            <AppBarButton.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem x:Name="Button" Visibility="Visible" Text="选择文件" Click="Button_Click" />
+                </MenuFlyout>
+            </AppBarButton.Flyout>
+        </AppBarButton>
+        <MediaPlayerElement Name="MediaPlayer"  AutoPlay="True" AreTransportControlsEnabled="True" Grid.Row="1"/>
     </Grid>
 </Page>
