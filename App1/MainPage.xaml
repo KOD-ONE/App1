@@ -16,9 +16,12 @@
             <AppBarButton.Flyout>
                 <MenuFlyout>
                     <MenuFlyoutItem x:Name="Button" Visibility="Visible" Text="选择文件" Click="Button_Click" />
+                    <MenuFlyoutItem x:Name="Button2" Visibility="Visible" Text="在线播放" Click="Button2_Click" />
+                    <MenuFlyoutItem x:Name="Button3" Visibility="Visible" Text="下载音乐" Click="Button3_Click" />
                 </MenuFlyout>
             </AppBarButton.Flyout>
         </AppBarButton>
         <MediaPlayerElement Name="MediaPlayer"  AutoPlay="True" AreTransportControlsEnabled="True" Grid.Row="1"/>
+        
     </Grid>
 </Page>
